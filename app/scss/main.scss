@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    &::selection {
+        background: #BFD9BF;
+    }
+}
+
+%displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
+    width: 100%;
+    height: 100vh;
+    @extend %displayFlex;
+
+    >div {
+        background-color: white;
+        width: 350px;
+        height: 400px;
+        border-radius: 10px;
+        border: 3px solid #ABABAB;
+
+        @media (max-width: 400px) {
+            width: 300px;
+        }
+
+        >div:first-of-type {
+            width: 110px;
+            aspect-ratio: 1;
+            margin: 40px auto;
+            border-radius: 50%;
+            background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
+            @extend %displayFlex;
+            border: 2px solid #dcdcdc;
+
+            >div {
+                width: 100px;
+                aspect-ratio: 1;
+                background-color: grey;
+                border-radius: 50%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        >div:last-of-type {
+            margin: 100px auto 0;
+            width: 80%;
+            @extend %displayFlex;
+            justify-content: space-between;
+
+            @media (max-width: 400px) {
+                width: 90%;
+            }
+
+            a {
+                text-decoration: none;
+
+                div {
+                    width: 50px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    border: 1px solid #dcdcdc;
+                    @extend %displayFlex;
+                    transition: transform .6s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                    i {
+                        font-size: 25px;
+                        color: rgb(0, 149, 0);
+                    }
+                }
+
+
+                &:first-of-type div {
+                    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png") no-repeat center center;
+                    background-size: 40px 40px !important;
+                }
+
+                &:nth-of-type(2) div {
+                    background: url("https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png") no-repeat center center;
+                    background-size: 50px 50px !important;
+                }
+            }
+        }
+    }
+}
