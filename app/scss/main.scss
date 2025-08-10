@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
-@media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
-    * {
+* {
+    @media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
         margin: 0;
         padding: 0;
         font-family: "Playpen Sans", cursive;
@@ -10,14 +10,16 @@
             background: #BFD9BF;
         }
     }
+}
 
-    %displayFlex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+%displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    #container {
+#container {
+    @media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
         background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
         width: 100%;
         height: 100vh;
