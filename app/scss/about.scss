@@ -1,217 +1,219 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Playpen Sans", cursive;
+@media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Playpen Sans", cursive;
 
-    &::selection {
-        background: #BFD9BF;
-    }
-}
-
-%displayFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#container {
-    background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
-    width: 100%;
-    height: 126vh;
-    @extend %displayFlex;
-
-    @media (max-width: 850px) and (min-width: 750px) {
-        height: 142vh;
+        &::selection {
+            background: #BFD9BF;
+        }
     }
 
-    @media (max-width: 750px) and (min-width: 650px) {
-        height: 204vh;
+    %displayFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    @media (max-width: 650px) and (min-width: 550px) {
-        height: 222vh;
-    }
-
-    @media (max-width: 550px) and (min-width: 450px) {
-        height: 230vh;
-    }
-
-    @media (max-width: 450px) {
-        height: 250vh;
-    }
-
-    >div {
-        background-color: white;
-        width: 800px;
-        border-radius: 10px;
-        border: 3px solid #ABABAB;
+    #container {
+        background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
+        width: 100%;
+        height: 126vh;
+        @extend %displayFlex;
 
         @media (max-width: 850px) and (min-width: 750px) {
-            width: 700px;
+            height: 142vh;
         }
 
         @media (max-width: 750px) and (min-width: 650px) {
-            width: 600px;
+            height: 204vh;
         }
 
         @media (max-width: 650px) and (min-width: 550px) {
-            width: 500px;
+            height: 222vh;
         }
 
         @media (max-width: 550px) and (min-width: 450px) {
-            width: 400px;
+            height: 230vh;
         }
 
         @media (max-width: 450px) {
-            width: 305px;
+            height: 250vh;
         }
 
-
-        h1 {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 35px;
-        }
-
-        >div:first-of-type {
-            float: left;
-            width: 165px;
-            aspect-ratio: 0.72;
-            margin: 20px 0 0 30px;
+        >div {
+            background-color: white;
+            width: 800px;
             border-radius: 10px;
-            background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
-            @extend %displayFlex;
-            border: 2px solid #dcdcdc;
+            border: 3px solid #ABABAB;
 
-            @media (max-width: 650px) {
-                float: none;
+            @media (max-width: 850px) and (min-width: 750px) {
+                width: 700px;
             }
 
-            @media (max-width: 550px) {
-                margin: 20px auto 0;
+            @media (max-width: 750px) and (min-width: 650px) {
+                width: 600px;
             }
 
-            >div {
-                width: 150px;
-                aspect-ratio: 0.7;
-                background-color: grey;
+            @media (max-width: 650px) and (min-width: 550px) {
+                width: 500px;
+            }
+
+            @media (max-width: 550px) and (min-width: 450px) {
+                width: 400px;
+            }
+
+            @media (max-width: 450px) {
+                width: 305px;
+            }
+
+
+            h1 {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 35px;
+            }
+
+            >div:first-of-type {
+                float: left;
+                width: 165px;
+                aspect-ratio: 0.72;
+                margin: 20px 0 0 30px;
                 border-radius: 10px;
-            }
-        }
+                background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
+                @extend %displayFlex;
+                border: 2px solid #dcdcdc;
 
-        >div:nth-of-type(2) {
-            float: left;
-            margin: 25px 0 0 15px;
-
-            @media (max-width: 450px) {
-                float: none;
-                width: 90%;
-                margin: 25px 0 0 10px;
-            }
-
-            p {
-                margin-bottom: 15px;
-                border-bottom: 1px solid #ABABAB;
-                padding-bottom: 1px;
-            }
-        }
-
-        >div:nth-of-type(3) {
-            margin-top: 320px;
-            @extend %displayFlex;
-            justify-content: space-between;
-            align-items: start;
-
-            @media (max-width: 750px) {
-                flex-direction: column;
-            }
-
-            @media (max-width: 650px) and (min-width: 450px) {
-                margin-top: 200px;
-            }
-
-            @media (max-width: 450px) {
-                margin-top: 50px;
-            }
-
-            >div {
-                &:first-of-type {
-                    width: 40%;
-
-                    @media (max-width: 750px) {
-                        width: 100%;
-                    }
+                @media (max-width: 650px) {
+                    float: none;
                 }
 
-                &:last-of-type {
-                    width: 60%;
-
-                    @media (max-width: 750px) {
-                        width: 100%;
-                        margin: 50px 0 0;
-                    }
+                @media (max-width: 550px) {
+                    margin: 20px auto 0;
                 }
 
-                >div:first-of-type {
-                    margin-left: 10px;
+                >div {
+                    width: 150px;
+                    aspect-ratio: 0.7;
+                    background-color: grey;
+                    border-radius: 10px;
+                }
+            }
+
+            >div:nth-of-type(2) {
+                float: left;
+                margin: 25px 0 0 15px;
+
+                @media (max-width: 450px) {
+                    float: none;
+                    width: 90%;
+                    margin: 25px 0 0 10px;
                 }
 
-                >div:nth-of-type(2),
-                >div:nth-of-type(3),
-                >div:last-of-type {
-                    margin: 50px 0 0 10px;
+                p {
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #ABABAB;
+                    padding-bottom: 1px;
+                }
+            }
 
-                    p {
-                        margin-left: 30px;
-                    }
+            >div:nth-of-type(3) {
+                margin-top: 320px;
+                @extend %displayFlex;
+                justify-content: space-between;
+                align-items: start;
 
-                    button {
-                        margin-top: 5px;
-                        margin-left: 30px;
-                        padding: 7px 10px;
-                        border-radius: 5px;
-                        background-color: white;
-                        border: 2px solid #468989;
-                        font-size: 16px;
-                        font-weight: 500;
-                        color: #3f7272;
-                        transition: all .5s ease;
-                        cursor: pointer;
+                @media (max-width: 750px) {
+                    flex-direction: column;
+                }
 
-                        &:hover {
-                            background-color: #468989;
-                            color: white;
+                @media (max-width: 650px) and (min-width: 450px) {
+                    margin-top: 200px;
+                }
+
+                @media (max-width: 450px) {
+                    margin-top: 50px;
+                }
+
+                >div {
+                    &:first-of-type {
+                        width: 40%;
+
+                        @media (max-width: 750px) {
+                            width: 100%;
                         }
                     }
-                }
 
-                >div:nth-of-type(3),
-                >div:last-of-type {
-                    h2 {
-                        display: inline-block;
+                    &:last-of-type {
+                        width: 60%;
+
+                        @media (max-width: 750px) {
+                            width: 100%;
+                            margin: 50px 0 0;
+                        }
                     }
 
-                    button {
-                        margin: 5px 0 20px 5px;
+                    >div:first-of-type {
+                        margin-left: 10px;
                     }
-                }
 
-                >div ul {
-                    margin-left: 10px;
+                    >div:nth-of-type(2),
+                    >div:nth-of-type(3),
+                    >div:last-of-type {
+                        margin: 50px 0 0 10px;
 
-                    li {
-                        list-style: none;
+                        p {
+                            margin-left: 30px;
+                        }
 
-                        div:first-of-type {
-                            position: relative;
-                            bottom: 5px;
-                            margin-right: 5px;
+                        button {
+                            margin-top: 5px;
+                            margin-left: 30px;
+                            padding: 7px 10px;
+                            border-radius: 5px;
+                            background-color: white;
+                            border: 2px solid #468989;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #3f7272;
+                            transition: all .5s ease;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #468989;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    >div:nth-of-type(3),
+                    >div:last-of-type {
+                        h2 {
                             display: inline-block;
-                            width: 15px;
-                            height: 2px;
-                            background-color: black;
+                        }
+
+                        button {
+                            margin: 5px 0 20px 5px;
+                        }
+                    }
+
+                    >div ul {
+                        margin-left: 10px;
+
+                        li {
+                            list-style: none;
+
+                            div:first-of-type {
+                                position: relative;
+                                bottom: 5px;
+                                margin-right: 5px;
+                                display: inline-block;
+                                width: 15px;
+                                height: 2px;
+                                background-color: black;
+                            }
                         }
                     }
                 }

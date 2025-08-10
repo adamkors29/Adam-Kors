@@ -1,74 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Playpen Sans", cursive;
+@media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Playpen Sans", cursive;
 
-    &::selection {
-        background: #BFD9BF;
+        &::selection {
+            background: #BFD9BF;
+        }
     }
-}
 
-%displayFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    %displayFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#container {
-    background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
-    width: 100%;
-    height: 100vh;
-    @extend %displayFlex;
+    #container {
+        background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
+        width: 100%;
+        height: 100vh;
+        @extend %displayFlex;
 
-    >div {
-        background-color: white;
-        width: 800px;
-        border-radius: 10px;
-        border: 3px solid #ABABAB;
-
-        @media (max-width: 850px) {
-            width: 95%;
-        }
-
-        h1 {
-            margin-top: 30px;
-            text-align: center;
-
-            @media (max-width: 700px) and (min-width: 330px) {
-                font-size: 25px;
-            }
-
-            @media (max-width: 330px) {
-                font-size: 24px;
-            }
-        }
-
-        div {
-            margin: 30px auto;
-            width: 90%;
-            aspect-ratio: 1.41;
-            background: url("../img/diploma.png") no-repeat center center;
-            background-size: cover !important;
-        }
-
-        >a button {
-            margin: 10px 10%;
-            width: 80%;
-            padding: 7px 0;
-            border-radius: 5px;
+        >div {
             background-color: white;
-            border: 2px solid #468989;
-            font-size: 16px;
-            font-weight: 500;
-            color: #3f7272;
-            transition: all .5s ease;
-            cursor: pointer;
+            width: 800px;
+            border-radius: 10px;
+            border: 3px solid #ABABAB;
 
-            &:hover {
-                background-color: #468989;
-                color: white;
+            @media (max-width: 850px) {
+                width: 95%;
+            }
+
+            h1 {
+                margin-top: 30px;
+                text-align: center;
+
+                @media (max-width: 700px) and (min-width: 330px) {
+                    font-size: 25px;
+                }
+
+                @media (max-width: 330px) {
+                    font-size: 24px;
+                }
+            }
+
+            div {
+                margin: 30px auto;
+                width: 90%;
+                aspect-ratio: 1.41;
+                background: url("../img/diploma.png") no-repeat center center;
+                background-size: cover !important;
+            }
+
+            >a button {
+                margin: 10px 10%;
+                width: 80%;
+                padding: 7px 0;
+                border-radius: 5px;
+                background-color: white;
+                border: 2px solid #468989;
+                font-size: 16px;
+                font-weight: 500;
+                color: #3f7272;
+                transition: all .5s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #468989;
+                    color: white;
+                }
             }
         }
     }
