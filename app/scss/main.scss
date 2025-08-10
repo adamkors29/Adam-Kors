@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Playpen Sans Hebrew", cursive;
+    font-family: "Playpen Sans", cursive;
 
     &::selection {
         background: #BFD9BF;
@@ -25,7 +25,6 @@
     >div {
         background-color: white;
         width: 350px;
-        height: 400px;
         border-radius: 10px;
         border: 3px solid #ABABAB;
 
@@ -52,10 +51,14 @@
 
         h1 {
             text-align: center;
+
+            @media (max-width: 400px) {
+                font-size: 27px;
+            }
         }
 
         >div:last-of-type {
-            margin: 100px auto 0;
+            margin: 70px auto 0;
             width: 80%;
             @extend %displayFlex;
             justify-content: space-between;
@@ -96,6 +99,25 @@
                     background: url("https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png") no-repeat center center;
                     background-size: 50px 50px !important;
                 }
+            }
+        }
+
+        >a button {
+            margin: 10px 10%;
+            width: 80%;
+            padding: 7px 0;
+            border-radius: 5px;
+            background-color: white;
+            border: 2px solid #468989;
+            font-size: 16px;
+            font-weight: 500;
+            color: #3f7272;
+            transition: all .5s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #468989;
+                color: white;
             }
         }
     }
