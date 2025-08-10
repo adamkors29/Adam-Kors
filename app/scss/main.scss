@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Playpen Sans Hebrew", cursive;
 
     &::selection {
         background: #BFD9BF;
@@ -33,7 +36,7 @@
         >div:first-of-type {
             width: 110px;
             aspect-ratio: 1;
-            margin: 40px auto;
+            margin: 40px auto 30px;
             border-radius: 50%;
             background: linear-gradient(0deg, rgb(150, 233, 235) 0%, rgb(227, 203, 152) 100%);
             @extend %displayFlex;
